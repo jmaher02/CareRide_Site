@@ -6,35 +6,58 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    #grad1 {
+      height: 300px;
+      background-color: dodgerblue; /* For browsers that do not support gradients */
+      background-image: linear-gradient(to bottom right, dodgerblue, cornflowerblue, aqua);
+    }
+    #dodgerblue {
+      background-color: dodgerblue; 
+      color: white;
+    }
+</style>
 </head>
 <body>
 
-<div class="w3-bar w3-black">
-    <a href="#" class="w3-bar-item w3-button">Home</a>
-    <a href="#" class="w3-bar-item w3-button">About</a>
-    <a href="#" class="w3-bar-item w3-button">Services</a>
-    <a href="#" class="w3-bar-item w3-button">Contact</a>
+<!-- Navigation -->
+<div class="w3-bar w3-black" id="home">
+    <a href="#home" class="w3-bar-item w3-button">Home</a>
+    <a href="#about" class="w3-bar-item w3-button">About</a>
+    <a href="#services" class="w3-bar-item w3-button">Services</a>
+    <a href="#pricing" class="w3-bar-item w3-button">Pricing</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
 </div>
 
-<div class="w3-panel">
-  <p class="w3-text-indigo w3-jumbo" style="text-shadow:1px 1px 0 #444">
+<!-- Header -->
+<div class="w3-container w3-padding-large w3-text-white" id="grad1">
+  <p class="w3-xxxlarge" style="text-shadow:1px 1px 0 #444">
     <b>Care Ride NKY</b></p>
+  <p class="w3-large">Comfort and compassion, one ride at a time.</p>
+  <a href="https://www.facebook.com/people/Care-Ride-NKY/61553604857371/">
+    <i class="fa fa-facebook-official w3-large w3-hover-opacity"></i></a>
+  <a href="https://www.instagram.com/careridenky/">
+    <i class="fa fa-instagram w3-large w3-hover-opacity"></i></a>
 </div>
 
-<div class="w3-row">
+<!-- Mission Statement -->
+<div class="w3-row" style="padding:24px 16px" >
     <div class="w3-container w3-quarter">
-      <p><br></p>
+      <p></p>
     </div>
     <div class="w3-container w3-half">
       <h2>Our Mission</h2>
       <p>Serving the Northern Kentucky region, we strive to provide compassionate 
         and reliable transportation service for individuals with accessibility needs.</p>
+      <p>Services available by appointment only.</p>
+      <a href="#contact" class="w3-button" id="dodgerblue">Contact us to Schedule</a>
     </div>
     <div class="w3-container w3-quarter">
-        <p><br></p>
+        <p></p>
     </div>
 </div>
 
+<!-- Image banner -->
 <div class="w3-row">
     <div class="w3-container w3-quarter">
         <p><br></p>
@@ -47,10 +70,10 @@
     </div>
 </div>
 
-<div class="w3-panel">
-    <p><br></p>
+<!-- Services -->
+<div class="w3-panel w3-center" id="services">
+    <h2>Our Services</h2>
 </div>
-
 <div class="w3-row-padding w3-white">
     <div class="w3-card w3-center w3-third w3-animate-bottom">
         <header class="w3-container w3-animate-opacity w3-pale-blue">
@@ -96,13 +119,118 @@
                 needs, we offer same-day pickup options based on availability. </p>
         </div>
     </div>
-
-
 </div>
 
-<div class="w3-panel w3-indigo">
-  <p><br>Site updated 2023<br><br></p>
+<!-- About -->
+<div class="w3-row" style="padding:64px 16px" >
+    <div class="w3-container w3-quarter">
+      <p></p>
+    </div>
+    <div class="w3-container w3-half">
+      <h2>Our Team and Our Story</h2>
+      <p>Meet Julie, a dedicated and caring Certified Nursing Assistant with a passion 
+        for making a difference in the lives of those who need it most. </p>
+      <p>With over 15 years of experience specializing in the transport of wheel-chair 
+        bound individuals, I have honed not just the skills, but the genuine empathy 
+        required for this important role. My journey began with a simple desire -- to 
+        ensure that those facing mobility challenges have a reliable and compassionate 
+        companion on their journey. Over the years, I've witnessed the transformative 
+        power of a helping hand and a kind heart. Each ride is not just a trip; it's an 
+        opportunity to brighten someone's day, to provide comfort, and to make a 
+        meaningful impact on their quality of life.</p>
+      <p>What sets us apart is not just the wheels that move us forward, but the unwavering
+        commitment to reliability, safety, and genuine human connection. It's not just 
+        about transportation; it's about building relationships, fostering trust, and 
+        creating a supportive community for those who rely on us.</p>
+      <p>Join us on this journey of care, where every ride is more than a service -- it's
+        a shared moment of humanity, compassion, and support. Together, let's navigate 
+        the road of life with dignity, respect, and a smile.</p>
+      <a href="#contact" class="w3-button" id="dodgerblue">Contact us to Schedule</a>
+    </div>
+    <div class="w3-container w3-quarter">
+        <p></p>
+    </div>
 </div>
+
+<!-- Pricing -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:64px 16px" id="pricing">
+  <h3>PRICING</h3>
+  <p class="w3-large">Pricing is based on time and type of service. Base rate includes the first 10 miles of transport.</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-xlarge w3-padding-48" id="dodgerblue">Business Hours Transport</li>
+        <li class="w3-padding-16"><b>$25 - $30</b> Ambulatory Base Rate</li>
+        <li class="w3-padding-16"><b>$45 - $50</b> Wheelchair Base Rate</li>
+        <li class="w3-padding-16"><b>$3 - $5</b> /mile Additional Mileage</li>
+        <li class="w3-padding-16"><b>$15 - $20</b> /30min Wait Time</li>
+        <li class="w3-padding-16"><b>$5 - $10</b> Additional Attendant</li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Weekend / Off Hours Transport</li>
+        <li class="w3-padding-16"><b>$25 - $30</b> Ambulatory Base Rate</li>
+        <li class="w3-padding-16"><b>$45 - $50</b> Wheelchair Base Rate</li>
+        <li class="w3-padding-16"><b>$3 - $5</b> /mile Additional Mileage</li>
+        <li class="w3-padding-16"><b>$15 - $20</b> /30min Wait Time</li>
+        <li class="w3-padding-16"><b>$5 - $10</b> Additional Attendant</li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Holiday Transport</li>
+        <li class="w3-padding-16"><b>$25 - $30</b> Ambulatory Base Rate</li>
+        <li class="w3-padding-16"><b>$45 - $50</b> Wheelchair Base Rate</li>
+        <li class="w3-padding-16"><b>$3 - $5</b> /mile Additional Mileage</li>
+        <li class="w3-padding-16"><b>$15 - $20</b> /30min Wait Time</li>
+        <li class="w3-padding-16"><b>$5 - $10</b> Additional Attendant</li> 
+        <li class="w3-padding-16">
+          <h2>Available Holidays</h2>
+          <span class="w3-opacity">New Year's, Easter, Thanksgiving, Christmas Eve, Christmas Day</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Union, KY</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: (859) 568-4198</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: jsteele240@outlook.com</p>
+    <p><i class="fa fa-clock-o fa-fw w3-xxlarge w3-margin-right"> </i> Hours: Mon-Fri 8am to 5pm</p>
+    <br>
+    <!-- <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form> -->
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/people/Care-Ride-NKY/61553604857371/">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/careridenky/">
+      <i class="fa fa-instagram w3-hover-opacity"></i></a>
+  </div>
+  <p>Powered by Github Pages. Site Updated 2023.</p>
+</footer>
 
 </body>
 </html>
