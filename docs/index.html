@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <title>Care Ride NKY | Home</title>
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta charset="utf-8">
@@ -71,17 +72,15 @@
 </div>
 
 <!-- Services -->
-<div class="w3-panel w3-center" id="services">
-    <h2>Our Services</h2>
-</div>
-<div class="w3-row-padding w3-white">
-    <div class="w3-card w3-center w3-third w3-animate-bottom">
-        <header class="w3-container w3-animate-opacity w3-pale-blue">
+<div class="w3-panel w3-center w3-light-grey" style="padding:24px 16px" id="services">
+  <h2>Our Services</h2>
+  <div class="w3-row-padding">
+    <div class="w3-third w3-section w3-center">
+        <header class="w3-pale-blue">
             <h3><i class="fa fa-building-o"></i><br></h3>
             <h3>Door to Door</h3>
         </header>
-
-        <div class="w3-container">
+        <div class="w3-container w3-white">
             <p>By offering a direct pick-up and drop-off at the individual's residence, 
                 door-to-door non-emergency medical transport not only promotes 
                 accessibility to healthcare but also provides a compassionate and 
@@ -89,16 +88,14 @@
                 of ease and reassurance throughout the entire transportation process</p>
         </div>
     </div>
-
-    <div class="w3-card w3-center w3-third w3-animate-bottom">
-        <header class="w3-container w3-animate-opacity w3-pale-blue">
+    <div class="w3-third w3-section w3-center">
+        <div class="w3-pale-blue">
             <h3>
                 <i class="fa fa-medkit"></i>
                 <i class="fa fa-birthday-cake"></i><br></h3>
             <h3>Any Occasion</h3>
-        </header>
-
-        <div class="w3-container">
+        </div>
+        <div class="w3-container w3-white">
             <p>Doctor's appointments</p>
             <p>Hospital discharge</p>
             <p>Religious services</p>
@@ -106,23 +103,47 @@
             <p>Transport to another facility</p>
         </div>
     </div>
-
-    <div class="w3-card w3-center w3-third w3-animate-bottom">
-        <header class="w3-container w3-animate-opacity w3-pale-blue">
+    <div class="w3-third w3-section w3-center">
+        <header class="w3-pale-blue">
             <h3><i class="fa fa-calendar"></i><br></h3>
             <h3>Schedule</h3>
         </header>
 
-        <div class="w3-container">
+        <div class="w3-container w3-white">
             <p>We recommend scheduling your pick-up in advance to secure your preferred 
                 time slot. However, recognizing the occasional urgency of our client's 
                 needs, we offer same-day pickup options based on availability. </p>
         </div>
     </div>
+  </div>
+  <!-- Image Banner -->
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="assets/accessible_car_angle.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Picture of rear ramp used for accesssible transport">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="assets/accessible_car_front.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Picture of accessible van used for transportation">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="assets/accessible_car_rear_entry.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Picture of rear ramp used for accessible transportation">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="assets/accessible_car_side_entry.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Picture of middle row of accessible van">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
 </div>
 
 <!-- About -->
-<div class="w3-row" style="padding:64px 16px" >
+<div class="w3-row" style="padding:64px 16px" id="about">
     <div class="w3-container w3-quarter">
       <p></p>
     </div>
@@ -154,7 +175,7 @@
 
 <!-- Pricing -->
 <div class="w3-container w3-center w3-dark-grey" style="padding:64px 16px" id="pricing">
-  <h3>PRICING</h3>
+  <h2>PRICING</h2>
   <p class="w3-large">Pricing is based on time and type of service. Base rate includes the first 10 miles of transport.</p>
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-third">
@@ -170,20 +191,20 @@
     <div class="w3-third w3-section">
       <ul class="w3-ul w3-white w3-hover-shadow">
         <li class="w3-black w3-xlarge w3-padding-32">Weekend / Off Hours Transport</li>
-        <li class="w3-padding-16"><b>$25 - $30</b> Ambulatory Base Rate</li>
-        <li class="w3-padding-16"><b>$45 - $50</b> Wheelchair Base Rate</li>
-        <li class="w3-padding-16"><b>$3 - $5</b> /mile Additional Mileage</li>
-        <li class="w3-padding-16"><b>$15 - $20</b> /30min Wait Time</li>
+        <li class="w3-padding-16"><b>$30 - $40</b> Ambulatory Base Rate</li>
+        <li class="w3-padding-16"><b>$60 - $70</b> Wheelchair Base Rate</li>
+        <li class="w3-padding-16"><b>$5 - $7</b> /mile Additional Mileage</li>
+        <li class="w3-padding-16"><b>$25 - $30</b> /30min Wait Time</li>
         <li class="w3-padding-16"><b>$5 - $10</b> Additional Attendant</li>
       </ul>
     </div>
     <div class="w3-third w3-section">
       <ul class="w3-ul w3-white w3-hover-shadow">
         <li class="w3-black w3-xlarge w3-padding-32">Holiday Transport</li>
-        <li class="w3-padding-16"><b>$25 - $30</b> Ambulatory Base Rate</li>
-        <li class="w3-padding-16"><b>$45 - $50</b> Wheelchair Base Rate</li>
-        <li class="w3-padding-16"><b>$3 - $5</b> /mile Additional Mileage</li>
-        <li class="w3-padding-16"><b>$15 - $20</b> /30min Wait Time</li>
+        <li class="w3-padding-16"><b>$35 - $45</b> Ambulatory Base Rate</li>
+        <li class="w3-padding-16"><b>$90 - $100</b> Wheelchair Base Rate</li>
+        <li class="w3-padding-16"><b>$8 - $10</b> /mile Additional Mileage</li>
+        <li class="w3-padding-16"><b>$30 - $35</b> /30min Wait Time</li>
         <li class="w3-padding-16"><b>$5 - $10</b> Additional Attendant</li> 
         <li class="w3-padding-16">
           <h2>Available Holidays</h2>
@@ -192,12 +213,13 @@
       </ul>
     </div>
   </div>
+  <p class="w3-medium">DISCLAIMER: Pricing subject to change.</p>
 </div>
 
 
 <!-- Contact Section -->
 <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-  <h3 class="w3-center">CONTACT</h3>
+  <h2 class="w3-center">Contact Us</h2>
   <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
   <div style="margin-top:48px">
     <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Union, KY</p>
@@ -232,5 +254,14 @@
   <p>Powered by Github Pages. Site Updated 2023.</p>
 </footer>
 
+<script>
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+</script>
 </body>
 </html>
