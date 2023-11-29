@@ -3,14 +3,18 @@
 <head>
 <title>Care Ride NKY | Home</title>
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-<meta name="description" content="Care Ride NKY proivides non-emergency
-    transportation for individuals with accessibility needs. We provide
+<meta name="description" content="Care Ride NKY provides non-emergency
+    medical transportation for individuals with accessibility needs, 
+    including wheelchair transport and other mobility needs. We provide
     comfort and compassion, one ride at a time.">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+    #topnav-right {
+      float: right;
+    }
     #grad1 {
       height: 300px;
       background-color: dodgerblue; /* For browsers that do not support gradients */
@@ -25,23 +29,29 @@
 <body>
 
 <!-- Navigation -->
-<div class="w3-bar w3-black" id="home">
+<div class="w3-top">
+  <div class="w3-bar w3-black">
     <a href="#home" class="w3-bar-item w3-button">Home</a>
     <a href="#about" class="w3-bar-item w3-button">About</a>
     <a href="#services" class="w3-bar-item w3-button">Services</a>
     <a href="#pricing" class="w3-bar-item w3-button">Pricing</a>
     <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <div id="topnav-right">
+      <a href="https://www.facebook.com/people/Care-Ride-NKY/61553604857371/">
+        <i class="w3-bar-item fa fa-facebook-official w3-large w3-hover-opacity"></i></a>
+        <!-- <a href="https://www.instagram.com/careridenky/">
+          <i class="w3-bar-item fa fa-instagram w3-large w3-hover-opacity"></i></a> -->
+    </div>
+  </div>
 </div>
 
 <!-- Header -->
-<div class="w3-container w3-padding-large w3-text-white" id="grad1">
-  <p class="w3-xxxlarge" style="text-shadow:1px 1px 0 #444">
-    <b>Care Ride NKY</b></p>
-  <p class="w3-large">Comfort and compassion, one ride at a time.</p>
-  <a href="https://www.facebook.com/people/Care-Ride-NKY/61553604857371/">
-    <i class="fa fa-facebook-official w3-large w3-hover-opacity"></i></a>
-  <a href="https://www.instagram.com/careridenky/">
-    <i class="fa fa-instagram w3-large w3-hover-opacity"></i></a>
+<div id="home">
+  <div class="w3-container w3-padding-64 w3-text-white" id="grad1">
+    <p class="w3-xxxlarge" style="text-shadow:1px 1px 0 #444">
+      <b>Care Ride NKY</b></p>
+    <p class="w3-large">Comfort and compassion, one ride at a time.</p>
+  </div>
 </div>
 
 <!-- Mission Statement -->
@@ -52,7 +62,8 @@
     <div class="w3-container w3-half">
       <h2>Our Mission</h2>
       <p>Serving the Northern Kentucky region, we strive to provide compassionate 
-        and reliable transportation service for individuals with accessibility needs.</p>
+        and reliable transportation service for individuals with accessibility needs,
+        including wheelchair transport and other limited mobility needs.</p>
       <p>Services available by appointment only.</p>
       <a href="#contact" class="w3-button" id="dodgerblue">Contact us to Schedule</a>
     </div>
@@ -75,7 +86,7 @@
 </div>
 
 <!-- Services -->
-<div class="w3-panel w3-center w3-light-grey" style="padding:24px 16px" id="services">
+<div class="w3-panel w3-center w3-light-grey" style="padding:64px 16px" id="services">
   <h2>Our Services</h2>
   <div class="w3-row-padding">
     <div class="w3-third w3-section w3-center">
@@ -114,7 +125,7 @@
 
         <div class="w3-container w3-white">
             <p>We recommend scheduling your pick-up in advance to secure your preferred 
-                time slot. However, recognizing the occasional urgency of our client's 
+                time slot. However, recognizing the occasional urgency of our clients' 
                 needs, we offer same-day pickup options based on availability. </p>
         </div>
     </div>
@@ -122,16 +133,16 @@
   <!-- Image Banner -->
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l3 m6">
-      <img src="assets/accessible_car_angle.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Picture of rear ramp used for accesssible transport">
+      <img src="assets/accessible_car_angle.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Rear ramp of wheelchair accessible van used for transport">
     </div>
     <div class="w3-col l3 m6">
-      <img src="assets/accessible_car_front.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Picture of accessible van used for transportation">
+      <img src="assets/accessible_car_front.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Wheelchair accessible van used for transportation">
     </div>
     <div class="w3-col l3 m6">
-      <img src="assets/accessible_car_rear_entry.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Picture of rear ramp used for accessible transportation">
+      <img src="assets/accessible_car_rear_entry.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Rear ramp of wheelchair accessible van used for transportation">
     </div>
     <div class="w3-col l3 m6">
-      <img src="assets/accessible_car_side_entry.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Picture of middle row of accessible van">
+      <img src="assets/accessible_car_side_entry.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Middle row of wheelchair accessible van">
     </div>
   </div>
 </div>
@@ -154,7 +165,7 @@
       <h2>Our Team and Our Story</h2>
       <p>Meet Julie, a dedicated and caring Certified Nursing Assistant with a passion 
         for making a difference in the lives of those who need it most. </p>
-      <p>With over 15 years of experience specializing in the transport of wheel-chair 
+      <p>With over 15 years of experience specializing in the transport of wheelchair 
         bound individuals, I have honed not just the skills, but the genuine empathy 
         required for this important role. My journey began with a simple desire -- to 
         ensure that those facing mobility challenges have a reliable and compassionate 
@@ -211,7 +222,7 @@
         <li class="w3-padding-16"><b>$5 - $10</b> Additional Attendant</li> 
         <li class="w3-padding-16">
           <h2>Available Holidays</h2>
-          <span class="w3-opacity">New Year's, Easter, Thanksgiving, Christmas Eve, Christmas Day</span>
+          <span class="w3-opacity">New Year's Eve, New Year's Day, Easter, Thanksgiving, Christmas Eve, Christmas Day</span>
         </li>
       </ul>
     </div>
@@ -223,7 +234,7 @@
 <!-- Contact Section -->
 <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
   <h2 class="w3-center">Contact Us</h2>
-  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <p class="w3-center w3-large">Let's get in touch. Send us a message:</p>
   <div style="margin-top:48px">
     <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Union, KY</p>
     <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: (859) 568-4198</p>
@@ -251,11 +262,10 @@
   <div class="w3-xlarge w3-section">
     <a href="https://www.facebook.com/people/Care-Ride-NKY/61553604857371/">
       <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="https://www.instagram.com/careridenky/">
-      <i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <!-- <a href="https://www.instagram.com/careridenky/">
+      <i class="fa fa-instagram w3-hover-opacity"></i></a> -->
   </div>
-  <p><i class="fa fa-copyright"></i> Care Ride NKY, LLC. Powered by Github Pages. Site Updated 2023.</p>
-  <p xmlns:cc="http://creativecommons.org/ns#">This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
+  <p><i class="fa fa-copyright"></i> 2023 Care Ride NKY, LLC.</p>
 </footer>
 
 <script>
